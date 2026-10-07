@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Task Menu - Flexbox</title>
+    <link rel="stylesheet"
+        href="styles.css">
+</head>
+
+<body>
+    <img class="small-image"
+        src="https://github.com/altercation/solarized/raw/master/img/solarized-values-light.png"
+        alt="Solarized color palette" />
+    <nav id="toc">
+        <div class="header">Table of Contents
+            <div class="toc">
+                <ul>
+                    <li><a href="#section-1"
+                            class="toc">1. How content is laid out on the Flexbox / grid</a></li>
+                    <li><a href="#section-2"
+                            class="toc">2. What settings are needed and how they affect the layout (Flexbox)</a>
+                    </li>
+                    <li><a href="#section-3"
+                            class="toc">3. How the layout responds to changes in screen size</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="header"
+        id="section-1">
+        How content is laid out on the Flexbox / grid
+    </div>
+    <div class="container">
+        <ul>
+            <li>Flexbox is used for a one-dimensional layout, with rows OR columns
+            </li>
+            <li>Grid is used for
+                a two-dimensional
+                layout, with rows AND columns.</li>
+        </ul>
+    </div>
+    <div class="header"
+        id="section-2">What settings are needed and how they affect the layout (Flexbox)
+    </div>
+    <div class="container">
+        <div class="container1"><span class="code">display</span> - Must be set to <span class="code">flex</span> or
+            <span class="code">inline-flex</span>
+            <br><br><span class="code">flex-direction</span> - Sets the display-direction of flex items
+            <ul>
+                <li><span class="code">row</span> (default)</li>
+                <li><span class="code">column</span></li>
+                <li><span class="code">row-reverse</span></li>
+                <li><span class="code">column-reverse</span></li>
+            </ul><span class="code">flex-wrap</span> - Specifies whether the flex items should wrap or not
+            <ul>
+                <li><span class="code">nowrap</span> (default)</li>
+                <li><span class="code">wrap</span></li>
+                <li><span class="code">wrap-reverse</span></li>
+            </ul><span class="code">flex-flow</span> - Shorthand property for <span class="code">flex-direction</span>
+            and for <span class="code">flex-wrap</span>
+            <br><br><span class="code">justify-content</span> - Aligns the flex items when they do not use
+            all available space on the main-axis (horizontally)
+            <ul>
+                <li><span class="code">flex-start</span> (default)</li>
+                <li><span class="code">center</span></li>
+                <li><span class="code">flex-end</span></li>
+                <li><span class="code">space-around</span></li>
+                <li><span class="code">space-between</span></li>
+                <li><span class="code">space-evenly</span></li>
+            </ul><span class="code">align-items</span> - Aligns the flex items when they do not use all available space
+            on the cross-axis (vertically)<ul>
+                <li><span class="code">normal</span> (default)</li>
+                <li><span class="code">stretch</span></li>
+                <li><span class="code">center</span></li>
+                <li><span class="code">flex-start</span></li>
+                <li><span class="code">flex-end</span></li>
+                <li><span class="code">baseline</span></li>
+            </ul><span class="code">align-content</span> - Aligns the flex lines when there is extra space in the cross
+            axis and flex items wrap<ul>
+                <li><span class="code">stretch</span> (default)</li>
+                <li><span class="code">center</span></li>
+                <li><span class="code">flex-start</span></li>
+                <li><span class="code">flex-end</span></li>
+                <li><span class="code">space-between</span></li>
+                <li><span class="code">space-around</span></li>
+                <li><span class="code">space-evenly</span></li>
+            </ul>
+        </div>
+    </div>
+    <div class="header"
+        id="section-3">
+        How the layout responds to changes in screen size
+    </div>
+    <div class="container">
+        <ul>
+            <li><span class="code">Wrapping</span> - By combining <span class="code">flex-wrap: wrap;</span> with a
+                <span class="code">flex-basis</span> on items, items automatically drop to the next line when the screen
+                narrows past a certain point.
+            </li>
+            <li><span class="code">Fluid Sizing</span> - Using <span class="code">flex: 1</span> allows items to expand
+                or contract smoothly to fill whatever space is available on the current screen size.</li>
+        </ul>
+    </div>
+</body>
+
+</html>
